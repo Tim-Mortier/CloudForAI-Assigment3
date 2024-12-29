@@ -1,7 +1,8 @@
 # CloudForAI-Assigment3
 ## Overview
 
-This project is a machine learning prediction API built using FastAPI. The API allows users to make predictions using a pre-trained logistic regression model, trained on heart disease dataset (heart.csv).
+This project is a machine learning prediction API built using FastAPI. The API allows users to make predictions using a pre-trained logistic regression model, which is trained on the heart disease dataset (`heart.csv`). It also supports easy deployment using Docker for production-grade setups.
+
 ## Setup and Installation
 ### Prerequisites
 
@@ -79,7 +80,7 @@ This project is a machine learning prediction API built using FastAPI. The API a
 
 You can test the API using `curl` or tools like Postman.
 
-Example Curl Command:
+### Example Curl Command:
 
 ```
 curl -X POST "http://127.0.0.1:8000/predict" \
@@ -88,6 +89,7 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 ```
 
 ## Docker Support
+
 Building and Running the Docker Image
 
 1. Build the Docker image:
