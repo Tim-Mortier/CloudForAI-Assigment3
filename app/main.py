@@ -11,11 +11,11 @@ def read_root():
     """
     return {"message": "Welcome to the prediction API! Use the /predict endpoint to make predictions."}
 
-@app.get("/favicon.ico")
-def get_favicon():
-    """
-    Serve the favicon.
-    """
-    return FileResponse("app/static/favicon.ico")
+# @app.get("/favicon.ico")
+# def get_favicon():
+#     """
+#     Serve the favicon.
+#     """
+#     return FileResponse("app/static/favicon.ico")
 
 app.include_router(prediction_router)
