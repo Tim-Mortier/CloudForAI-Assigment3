@@ -33,7 +33,7 @@ This project is a machine learning prediction API built using FastAPI. The API a
 4. Start the API server:
 
     ```
-    uvicorn app:app --reload
+    uvicorn app.main:app --reload
     ```
 
 5. Open your browser and visit http://127.0.0.1:8000/docs to explore the API using Swagger UI.
@@ -83,9 +83,7 @@ You can test the API using `curl` or tools like Postman.
 ### Example Curl Command:
 
 ```
-curl -X POST "http://127.0.0.1:8000/predict" \
--H "Content-Type: application/json" \
--d '{"data": [63, 1, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0, 1]}'
+curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d "{\"data\": [63, 1, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0, 1]}"
 ```
 
 ## Docker Support
